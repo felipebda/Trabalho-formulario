@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <style>
+        .div-form {
+            width: 280px;
+            border: 4px black solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div-form">
+        <form action="formulario">
+            <!--Nome-->
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+            <br>
+
+            <!--Data de Nascimento-->
+            <label for="nascimento">Data de Nascimento:</label>
+            <input type="date" id="nascimento" name="nascimento">
+            <br>
+
+            <!--Sexo-->
+            <label for="">Sexo:</label>
+            <input type="radio" id="m" name="sexo" value="m">
+            <label for="m">M</label>
+            <input type="radio" id="f" name="sexo" value="f">
+            <label for="f">F</label>
+            <input type="radio" id="n-a" name="sexo" value="n-a">
+            <label for="n-a">Prefiro não informar</label>
+            <br>
+
+            <!--Endereço-->
+            <label for="">Endereço:</label>
+            <br>
+            <label for="logradouro">Logradouro:</label>
+            <input type="text" id="logradouro" name="logradouro">
+            <br>
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro" name="bairro">
+            <br>
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade">
+            <br>
+
+            <!--UF-->
+            <label for="">UF:</label>
+            <select name="uf" id="uf">
+                <option value=""></option>
+                <option value="ac">AC</option>
+                <option value="al">AL</option>
+                <option value="ap">AP</option>
+                <option value="am">AM</option>
+                <option value="ba">BA</option>
+                <option value="ce">CE</option>
+                <option value="df">DF</option>
+                <option value="es">ES</option>
+                <option value="go">GO</option>
+                <option value="ma">MA</option>
+                <option value="mt">MT</option>
+                <option value="ms">MS</option>
+                <option value="mg">MG</option>
+                <option value="pa">PA</option>
+                <option value="pb">PB</option>
+                <option value="pr">PR</option>
+                <option value="pe">PE</option>
+                <option value="pi">PI</option>
+                <option value="rj">RJ</option>
+                <option value="rn">RN</option>
+                <option value="rs">RS</option>
+                <option value="ro">RO</option>
+                <option value="rr">RR</option>
+                <option value="sc">SC</option>
+                <option value="sp">SP</option>
+                <option value="se">SE</option>
+                <option value="to">TO</option>
+            </select>
+            <br>
+
+            <!--Email-->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <br>
+
+            <!--Botões-->
+            <input type="reset" value="limpar">
+            <input type="submit" value="enviar">
+            <p></p>
+
+
+
+
+
+        </form>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Questionario sobre formulário</title>
+    <style>
+        header {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .questao {
+            border-width: 1px;
+            border-color: black;
+            border-style: solid;
+            margin: 2px;
+        }
+
+
+        .questionario {
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!--Nome dos participantes-->
+    <header>
+        <table border="1">
+            <tr>
+                <th colspan="2">
+                    <h1> Trabalho sobre Formulário</h1>
+                </th>
+            </tr>
+            <tr>
+                <td>Nome:</td>
+                <td>Felipe Brum de Araújo</td>
+            </tr>
+            <tr>
+                <td>Curso:</td>
+                <td>Análise e Desenvolvimento de Sistemas (Matutino)</td>
+            </tr>
+        </table>
+    </header>
+    <!--Apresentar as perguntas e respostas-->
+
+    <h1>Questionário</h1>
+
+    <header class="questionario">
+        <!--Pergunta 1-->
+        <div class="questao">
+            <table>
+                <tr>
+                    <th class="pergunta">Pergunta 1</th>
+                </tr>
+                <tr>
+                    <td>
+                        Na tag &lt;input&gt; com o atributo type="text", para que serve
+                        o atributo "placeholder"?
+                    </td>
+                </tr>
+                <tr>
+                    <th class="resposta">Resposta</th>
+                </tr>
+                <tr>
+                    <td>
+                        O atributo "placeholder" faz você colocar uma escrita na área
+                        atribuida ao " type='' ", podesndo usar como identificação em espaços
+                        para colocar nome de usuário, senha, entre outros. Funciona para os
+                        &lt;input type=""&gt; que pedem escrita, como "text" e "password".
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!--Pergunta 2-->
+        <div class="questao">
+            <table>
+                <tr>
+                    <th class="pergunta">Pergunta 2</th>
+                </tr>
+                <tr>
+                    <td>Na tag &lt;input&gt; com o atributo type="radio" ou type="checkbox",
+                        para que serve o atributo "checked"?
+                    </td>
+                </tr>
+                <tr>
+                    <th class="resposta">Resposta</th>
+                </tr>
+                <tr>
+                    <td>
+                        Caso queira deixar uma opção previamente marcada no atributo "radio"
+                        ou "checkbox", dentro do elemento &lt;input&gt; vc acrescenta o
+                        atributo "checked".
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!--Pergunta 3-->
+        <div class="questao">
+            <table>
+                <tr>
+                    <th class="pergunta">Pergunta 3</th>
+                </tr>
+                <tr>
+                    <td>
+                        Na tag &lt;input&gt; para que serve o atributo "value"?
+                    </td>
+                </tr>
+                <tr>
+                    <th class="resposta">Resposta</th>
+                </tr>
+                <tr>
+                    <td>
+                        O atributo "value" especifica um valor do elemento &lt;input&gt;
+                        usado. Possui usos diferentes dependendo do "input type = '' "
+                        utilizado:
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>Para "button", "reset", e "submit"</li>
+                            <ul>
+                                <li>Define o texto do botão</li>
+                            </ul>
+                        </ul>
+                        <ul>
+                            <li>Para "text", "password" e "hidden"</li>
+                            <ul>
+                                <li>Define o valor padrão do campo onde insere o texto.</li>
+                            </ul>
+                        </ul>
+                        <ul>
+                            <li>Para "checkbox", "radio" e "image"</li>
+                            <ul>
+                                <li>Define o valor associado no input. Também será o valor
+                                    que será enviado na função do atributo "submit"
+                                </li>
+                            </ul>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!--Pergunta 4-->
+        <div class="questao">
+            <table>
+                <tr>
+                    <th>Pergunta 4</th>
+                </tr>
+                <tr>
+                    <td>
+                        Que atributo deve ser utilizado para agrupar vários botões de radio
+                        em um formulário de modo que apenas um deles fique marcado de cada
+                        vez?
+                    </td>
+                </tr>
+                <tr>
+                    <th>Resposta</th>
+                </tr>
+                <tr>
+                    <td>
+                        Em um grupo de atributo "radio", eles devem compartilhar o mesmo
+                        nome no atributo "name", para serem tratados como grupo.
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!--Pergunta 5-->
+        <div class="questao">
+            <table>
+                <tr>
+                    <th>Pergunta 5</th>
+                </tr>
+                <tr>
+                    <td>
+                        Para que serve a tag &lt;label&gt; Para que serve o atributo
+                        "for" nessa tag?
+                    </td>
+                </tr>
+                <tr>
+                    <th>Resposta</th>
+                </tr>
+                <tr>
+                    <td>
+                        A tag &lt;label&gt; serve para rotular vários elementos &lt;input&gt;.
+                        Também promove o benefício de ajudar usuários quando possui dificuldade
+                        de clicar em regiões muito pequenas de escolha.
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!--Pergunta 6-->
+        <div class="questao">
+            <table>
+                <tr>
+                    <th>Pergunta 6</th>
+                </tr>
+                <tr>
+                    <td>
+                        Na tag &lt;option&gt; para que serve o atributo "selected"?
+                    </td>
+                </tr>
+                <tr>
+                    <th>Resposta</th>
+                </tr>
+                <tr>
+                    <td>
+                        O atributo "selected" é um atributo booleano que quando presente,
+                        inforoma que aquela opção está pré-selecionada quando a página
+                        carregar.
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!--Pergunta 7-->
+        <div class="questao">
+            <table>
+                <tr>
+                    <th>Pergunta 7</th>
+                </tr>
+                <tr>
+                    <td>
+                        Nas tags de formulário, para que serve o atributo "required" ?
+                    </td>
+                </tr>
+                <tr>
+                    <th>Resposta</th>
+                </tr>
+                <tr>
+                    <td>
+                        O atributo "required" é um atributo booleano que quando presente,
+                        especifíca que aquele "input" deve ser preenchido antes de submeter
+                        o "form".
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!--Pergunta 8-->
+        <div class="questao">
+            <table>
+                <tr>
+                    <th>Pergunta 8</th>
+                </tr>
+                <tr>
+                    <td>
+                        Na tag &lt;form&gt; para que serve o atributo "action"?
+                    </td>
+                </tr>
+                <tr>
+                    <th>Resposta</th>
+                </tr>
+                <tr>
+                    <td>
+                        O atributo "action" especifica para onde mandar as informações do
+                        "form" quando ele for submetido.
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!--Pergunta 9-->
+        <div class="questao">
+            <table>
+                <tr>
+                    <th>Pergunta 9</th>
+                </tr>
+                <tr>
+                    <td>
+                        Na tag &lt;form&gt; para que serve o atributo "method"?
+                    </td>
+                </tr>
+                <tr>
+                    <th>Resposta</th>
+                </tr>
+                <tr>
+                    <td>
+                        O atributo "method" especifica como mandar os dados do "form". Eles
+                        podem ser mandados como variáveis de URL (pelo "method="get" ")
+                        ou como pós transação de html (pelo "method="post" ").
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!--Pergunta 10-->
+        <div class="questao">
+            <table>
+                <tr>
+                    <th>Pergunta 10</th>
+                </tr>
+                <tr>
+                    <td>
+                        Para que o valor digitado de uma senha não apareça na barra de endereços
+                        do navegador, qual deve ser o valor do atributo "method" na tag &lt;form&gt;?
+                    </td>
+                </tr>
+                <tr>
+                    <th>Resposta</th>
+                </tr>
+                <tr>
+                    <td>
+                        Para dados considerados sensíveis e que não desejamos que apareça visível
+                        no URL, devemos usar o method="post"
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!--pergunta 11-->
+        <div class="questao">
+            <table>
+                <tr>
+                    <th>Pergunta 11</th>
+                </tr>
+                <tr>
+                    <td>
+                        Qual o valor deve ser informado no atributo "method" na tag &lt;form&gt;
+                        em um formulário que será usado para fazer upload de arquivos?
+                    </td>
+                </tr>
+                <tr>
+                    <th>Resposta</th>
+                </tr>
+                <tr>
+                    <td>
+                        Para upload de arquivos utiliza o method="get".
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!--fazer um link para o formulario.html-->
+        <div class="botao">
+            <h1>Link para o formulário</h1>
+            <a href="formulario.html"><button>Clique aqui</button></a>
+        </div>
+    </header>
+
+
+
+</body>
+
+</html>
